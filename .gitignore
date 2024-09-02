@@ -1,5 +1,7 @@
 # Nuxt dev/build outputs
 target
+*.tar.gz
+
 .output
 .data
 .nuxt

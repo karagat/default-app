@@ -15,3 +15,6 @@ build: generate
 
 run:
 	docker run -it -p 8080:80 $(PROJECT):$(VERSION)
+
+export:
+	docker save $(PROJECT):$(VERSION) | gzip > $(PROJECT)_$(VERSION).tar.gz
